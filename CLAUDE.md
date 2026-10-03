@@ -43,9 +43,30 @@ code disagree, stop and ask.
 
 ## Commands
 - Install: pnpm install
+- Run locally: pnpm dev (needs apps/web/.env.local, see apps/web/.env.example)
+- Build: pnpm build
+- Apply migrations: pnpm migrate
+- New migration after a schema change: pnpm --filter @big-simulation/web db:generate
 - Test: pnpm test
+- HTTP tests against the built app: pnpm test:http (see docs/DEPLOY.md)
 - Typecheck: pnpm typecheck
 - Lint: pnpm lint
 - Format: pnpm format
-- Everything CI runs: pnpm check
-(dev, migrate and seed arrive with the web app in phase 1.)
+- Everything CI's first job runs: pnpm check
+(seed arrives with the scenario keys in phase 3.)
+
+## Web app
+- Every page calls requireUser() or requireInstructor() from
+  apps/web/src/server/auth.ts itself. Nothing relies on a layout or a proxy
+  having checked.
+- Every instructor server action starts with requireInstructorForAction(),
+  which also checks the Origin header. Every mutating route handler checks
+  it with isSameOrigin().
+- The signed-in person comes from findSessionUser(), which reads role and
+  code from the roster row as it is now. Do not read users.role directly.
+- Logic lives in apps/web/src/lib and takes the database as an argument, so
+  it is tested without Next.js. Route handlers and actions stay thin.
+- Messages, logs and audit rows never contain an email address or a name,
+  and never repeat what a roster cell contained.
+- Test fixtures use made-up people at the reserved domain college.example,
+  never an address at a real domain.
