@@ -1,0 +1,10 @@
+{
+  "name": "@big-simulation/engine",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pure accounting engine: statement model, validation and footing. No platform or UI imports.",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

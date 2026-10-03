@@ -1,0 +1,4 @@
+# Source documents and prose are kept as written.
+docs/
+*.md
+pnpm-lock.yaml
