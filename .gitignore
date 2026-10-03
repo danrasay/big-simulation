@@ -1,0 +1,23 @@
+# dependencies and build output
+node_modules/
+dist/
+.next/
+coverage/
+*.tsbuildinfo
+
+# secrets: commit .env.example only
+.env
+.env.*
+!.env.example
+
+# never commit people data or keys
+keys/
+rosters/
+*.roster.csv
+*.dump
+*.sql.gz
+
+# editors and OS
+.DS_Store
+.idea/
+.vscode/
