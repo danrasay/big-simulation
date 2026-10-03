@@ -1,0 +1,835 @@
+{
+  "schemaVersion": 1,
+  "id": "nvidia-fy2021",
+  "version": 1,
+  "title": "Nvidia, fiscal year ended January 31, 2021",
+  "company": "NVIDIA Corporation",
+  "kind": "exhibit",
+  "unit": "USD millions",
+  "source": {
+    "exhibit": "Exhibit 2",
+    "file": "docs/source/exhibit-2-nvidia-10k-fy2021.md",
+    "citation": "Goldblatt, Branco Chaves, Landman, Mwinjuma and Vitelli, \"Financial Statement Analysis Project: The Big Simulation\" (2022), Gettysburg College Open Educational Resources 13, CC BY 4.0. https://cupola.gettysburg.edu/oer/13"
+  },
+  "periods": [
+    {
+      "id": "FY2021",
+      "label": "Fiscal year ended January 31, 2021",
+      "endDate": "2021-01-31"
+    },
+    {
+      "id": "FY2020",
+      "label": "Fiscal year ended January 26, 2020",
+      "endDate": "2020-01-26"
+    },
+    {
+      "id": "FY2019",
+      "label": "Fiscal year ended January 27, 2019",
+      "endDate": "2019-01-27",
+      "note": "Income statement only. The exhibit prints two balance sheet dates."
+    }
+  ],
+  "lineItems": [
+    {
+      "id": "cash_and_equivalents",
+      "label": "Cash and cash equivalents",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 847,
+        "FY2020": 10896
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "marketable_securities",
+      "label": "Marketable securities",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 10714,
+        "FY2020": 1
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "receivables_net",
+      "label": "Accounts receivable, net",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 2429,
+        "FY2020": 1657
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "inventories",
+      "label": "Inventories",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 1826,
+        "FY2020": 979
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "other_current_assets",
+      "label": "Prepaid expenses and other current assets",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 239,
+        "FY2020": 157
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "net_property_and_equipment",
+      "label": "Property and equipment, net",
+      "statement": "balance_sheet",
+      "section": "noncurrent_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 2149,
+        "FY2020": 1674
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "operating_lease_assets",
+      "label": "Operating lease assets",
+      "statement": "balance_sheet",
+      "section": "noncurrent_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 707,
+        "FY2020": 618
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "goodwill",
+      "label": "Goodwill",
+      "statement": "balance_sheet",
+      "section": "noncurrent_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 4193,
+        "FY2020": 618
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "intangible_assets_net",
+      "label": "Intangible assets, net",
+      "statement": "balance_sheet",
+      "section": "noncurrent_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 2737,
+        "FY2020": 49
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "deferred_income_tax_assets",
+      "label": "Deferred income tax assets",
+      "statement": "balance_sheet",
+      "section": "noncurrent_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 806,
+        "FY2020": 548
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "other_assets",
+      "label": "Other assets",
+      "statement": "balance_sheet",
+      "section": "noncurrent_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 2144,
+        "FY2020": 118
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "accounts_payable",
+      "label": "Accounts payable",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 1201,
+        "FY2020": 687
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "accrued_liabilities",
+      "label": "Accrued and other current liabilities",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 1725,
+        "FY2020": 1097
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "short_term_debt",
+      "label": "Short-term debt",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 999,
+        "FY2020": 0
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "long_term_debt",
+      "label": "Long-term debt",
+      "statement": "balance_sheet",
+      "section": "noncurrent_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 5964,
+        "FY2020": 1991
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "long_term_operating_lease_liabilities",
+      "label": "Long-term operating lease liabilities",
+      "statement": "balance_sheet",
+      "section": "noncurrent_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 634,
+        "FY2020": 561
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "other_long_term_liabilities",
+      "label": "Other long-term liabilities",
+      "statement": "balance_sheet",
+      "section": "noncurrent_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 1375,
+        "FY2020": 775
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "preferred_stock",
+      "label": "Preferred stock",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 0,
+        "FY2020": 0
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "common_stock",
+      "label": "Common stock",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 1,
+        "FY2020": 1
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "additional_paid_in_capital",
+      "label": "Additional paid-in capital",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 8721,
+        "FY2020": 7045
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "treasury_stock",
+      "label": "Treasury stock, at cost",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 10756,
+        "FY2020": 9814
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "accumulated_other_comprehensive_income",
+      "label": "Accumulated other comprehensive income",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 19,
+        "FY2020": 1
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "retained_earnings",
+      "label": "Retained earnings",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 18908,
+        "FY2020": 14971
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "statement": "income_statement",
+      "section": "revenue",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 16675,
+        "FY2020": 10918,
+        "FY2019": 11716
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "cost_of_sales",
+      "label": "Cost of revenue",
+      "statement": "income_statement",
+      "section": "cost_of_sales",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 6279,
+        "FY2020": 4150,
+        "FY2019": 4545
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "research_and_development",
+      "label": "Research and development",
+      "statement": "income_statement",
+      "section": "operating_expenses",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 3924,
+        "FY2020": 2829,
+        "FY2019": 2376
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "selling_general_and_administrative",
+      "label": "Sales, general and administrative",
+      "statement": "income_statement",
+      "section": "operating_expenses",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 1940,
+        "FY2020": 1093,
+        "FY2019": 991
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "interest_income",
+      "label": "Interest income",
+      "statement": "income_statement",
+      "section": "other_income_expense",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 57,
+        "FY2020": 178,
+        "FY2019": 136
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "interest_expense",
+      "label": "Interest expense",
+      "statement": "income_statement",
+      "section": "other_income_expense",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 184,
+        "FY2020": 52,
+        "FY2019": 58
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "other_net",
+      "label": "Other, net",
+      "statement": "income_statement",
+      "section": "other_income_expense",
+      "normalBalance": "credit",
+      "values": {
+        "FY2021": 4,
+        "FY2020": -2,
+        "FY2019": 14
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "income_tax_expense",
+      "label": "Income tax expense (benefit)",
+      "statement": "income_statement",
+      "section": "income_tax",
+      "normalBalance": "debit",
+      "values": {
+        "FY2021": 77,
+        "FY2020": 174,
+        "FY2019": -245
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    }
+  ],
+  "totals": [
+    {
+      "id": "total_current_assets",
+      "label": "Total current assets",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "terms": [
+        {
+          "ref": "cash_and_equivalents",
+          "sign": 1
+        },
+        {
+          "ref": "marketable_securities",
+          "sign": 1
+        },
+        {
+          "ref": "receivables_net",
+          "sign": 1
+        },
+        {
+          "ref": "inventories",
+          "sign": 1
+        },
+        {
+          "ref": "other_current_assets",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2021": 16055,
+        "FY2020": 13690
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "total_assets",
+      "label": "Total assets",
+      "statement": "balance_sheet",
+      "section": "assets",
+      "normalBalance": "debit",
+      "terms": [
+        {
+          "ref": "total_current_assets",
+          "sign": 1
+        },
+        {
+          "ref": "net_property_and_equipment",
+          "sign": 1
+        },
+        {
+          "ref": "operating_lease_assets",
+          "sign": 1
+        },
+        {
+          "ref": "goodwill",
+          "sign": 1
+        },
+        {
+          "ref": "intangible_assets_net",
+          "sign": 1
+        },
+        {
+          "ref": "deferred_income_tax_assets",
+          "sign": 1
+        },
+        {
+          "ref": "other_assets",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2021": 28791,
+        "FY2020": 17315
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "total_current_liabilities",
+      "label": "Total current liabilities",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "accounts_payable",
+          "sign": 1
+        },
+        {
+          "ref": "accrued_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "short_term_debt",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2021": 3925,
+        "FY2020": 1784
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "total_liabilities",
+      "label": "Total liabilities",
+      "statement": "balance_sheet",
+      "section": "liabilities",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "total_current_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "long_term_debt",
+          "sign": 1
+        },
+        {
+          "ref": "long_term_operating_lease_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "other_long_term_liabilities",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2021": 11898,
+        "FY2020": 5111
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "total_equity",
+      "label": "Total shareholders' equity",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "preferred_stock",
+          "sign": 1
+        },
+        {
+          "ref": "common_stock",
+          "sign": 1
+        },
+        {
+          "ref": "additional_paid_in_capital",
+          "sign": 1
+        },
+        {
+          "ref": "treasury_stock",
+          "sign": -1
+        },
+        {
+          "ref": "accumulated_other_comprehensive_income",
+          "sign": 1
+        },
+        {
+          "ref": "retained_earnings",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2021": 16893,
+        "FY2020": 12204
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "total_liabilities_and_equity",
+      "label": "Total liabilities and shareholders' equity",
+      "statement": "balance_sheet",
+      "section": "liabilities_and_equity",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "total_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "total_equity",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2021": 28791,
+        "FY2020": 17315
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets"
+    },
+    {
+      "id": "gross_profit",
+      "label": "Gross profit",
+      "statement": "income_statement",
+      "section": "gross_profit",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "revenue",
+          "sign": 1
+        },
+        {
+          "ref": "cost_of_sales",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "FY2021": 10396,
+        "FY2020": 6768,
+        "FY2019": 7171
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "total_operating_expenses",
+      "label": "Total operating expenses",
+      "statement": "income_statement",
+      "section": "operating_expenses",
+      "normalBalance": "debit",
+      "terms": [
+        {
+          "ref": "research_and_development",
+          "sign": 1
+        },
+        {
+          "ref": "selling_general_and_administrative",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2021": 5864,
+        "FY2020": 3922,
+        "FY2019": 3367
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "operating_income",
+      "label": "Income from operations",
+      "statement": "income_statement",
+      "section": "operating_income",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "gross_profit",
+          "sign": 1
+        },
+        {
+          "ref": "total_operating_expenses",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "FY2021": 4532,
+        "FY2020": 2846,
+        "FY2019": 3804
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "other_income_expense_net",
+      "label": "Other income (expense), net",
+      "statement": "income_statement",
+      "section": "other_income_expense",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "interest_income",
+          "sign": 1
+        },
+        {
+          "ref": "interest_expense",
+          "sign": -1
+        },
+        {
+          "ref": "other_net",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2021": -123,
+        "FY2020": 124,
+        "FY2019": 92
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "income_before_tax",
+      "label": "Income before income tax",
+      "statement": "income_statement",
+      "section": "income_before_tax",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "operating_income",
+          "sign": 1
+        },
+        {
+          "ref": "other_income_expense_net",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2021": 4409,
+        "FY2020": 2970,
+        "FY2019": 3896
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "net_income",
+      "label": "Net income",
+      "statement": "income_statement",
+      "section": "net_income",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "income_before_tax",
+          "sign": 1
+        },
+        {
+          "ref": "income_tax_expense",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "FY2021": 4332,
+        "FY2020": 2796,
+        "FY2019": 4141
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    }
+  ],
+  "facts": [
+    {
+      "id": "eps_basic",
+      "label": "Net income per share, basic",
+      "unit": "usd_per_share",
+      "values": {
+        "FY2021": 7.02,
+        "FY2020": 4.59,
+        "FY2019": 6.81
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "eps_diluted",
+      "label": "Net income per share, diluted",
+      "unit": "usd_per_share",
+      "values": {
+        "FY2021": 6.9,
+        "FY2020": 4.52,
+        "FY2019": 6.63
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "weighted_shares_basic",
+      "label": "Weighted average shares used in per share computation, basic",
+      "unit": "shares_millions",
+      "values": {
+        "FY2021": 617,
+        "FY2020": 609,
+        "FY2019": 608
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "weighted_shares_diluted",
+      "label": "Weighted average shares used in per share computation, diluted",
+      "unit": "shares_millions",
+      "values": {
+        "FY2021": 628,
+        "FY2020": 618,
+        "FY2019": 625
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Income"
+    },
+    {
+      "id": "shares_outstanding",
+      "label": "Common shares outstanding at period end",
+      "unit": "shares_millions",
+      "values": {
+        "FY2021": 620,
+        "FY2020": 612
+      },
+      "sourceRef": "Exhibit 2, Consolidated Balance Sheets, common stock caption"
+    },
+    {
+      "id": "dividends_paid",
+      "label": "Dividends paid",
+      "unit": "usd_millions",
+      "values": {
+        "FY2021": 395,
+        "FY2020": 390,
+        "FY2019": 371
+      },
+      "sourceRef": "Exhibit 2, Consolidated Statements of Cash Flows"
+    }
+  ],
+  "perShareChecks": [
+    {
+      "result": "eps_basic",
+      "numerator": "net_income",
+      "denominator": "weighted_shares_basic",
+      "decimals": 2
+    },
+    {
+      "result": "eps_diluted",
+      "numerator": "net_income",
+      "denominator": "weighted_shares_diluted",
+      "decimals": 2
+    }
+  ],
+  "balanceIdentity": {
+    "assets": "total_assets",
+    "liabilitiesAndEquity": "total_liabilities_and_equity"
+  }
+}

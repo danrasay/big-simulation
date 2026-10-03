@@ -1,0 +1,893 @@
+{
+  "schemaVersion": 1,
+  "id": "best-buy-fy2022-altered",
+  "version": 1,
+  "title": "Best Buy, altered fiscal 2022 statements for the Investigator",
+  "company": "Best Buy Co., Inc.",
+  "kind": "exhibit",
+  "unit": "USD millions",
+  "source": {
+    "exhibit": "Exhibit 4",
+    "file": "docs/source/exhibit-4-best-buy-altered.md",
+    "citation": "Goldblatt, Branco Chaves, Landman, Mwinjuma and Vitelli, \"Financial Statement Analysis Project: The Big Simulation\" (2022), Gettysburg College Open Educational Resources 13, CC BY 4.0. https://cupola.gettysburg.edu/oer/13"
+  },
+  "altered": {
+    "periods": ["FY2022A"],
+    "notice": "The fiscal 2022 figures in this exhibit were invented for a forensic accounting exercise. They are not Best Buy's reported results."
+  },
+  "periods": [
+    {
+      "id": "FY2022A",
+      "label": "Fiscal year ended January 30, 2022 (altered for teaching)",
+      "endDate": "2022-01-30",
+      "note": "Column headed January 30, 2022 in the exhibit. Every figure in it is part of the exercise."
+    },
+    {
+      "id": "FY2021",
+      "label": "Fiscal year ended January 30, 2021",
+      "endDate": "2021-01-30"
+    },
+    {
+      "id": "FY2019",
+      "label": "Fiscal year ended February 2, 2019",
+      "endDate": "2019-02-02",
+      "note": "Income statement only. The exhibit heads this column February 1, 2020, but its figures are the ones Exhibit 1 reports for the year ended February 2, 2019."
+    }
+  ],
+  "lineItems": [
+    {
+      "id": "cash_and_equivalents",
+      "label": "Cash and cash equivalents",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 6500,
+        "FY2021": 5494
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "receivables_net",
+      "label": "Receivables, net",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 55,
+        "FY2021": 1061
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "inventories",
+      "label": "Merchandise inventories",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 12090,
+        "FY2021": 5612
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "other_current_assets",
+      "label": "Other current assets",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 380,
+        "FY2021": 373
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "land_and_buildings",
+      "label": "Land and buildings",
+      "statement": "balance_sheet",
+      "section": "property_and_equipment",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 656,
+        "FY2021": 658
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "leasehold_improvements",
+      "label": "Leasehold improvements",
+      "statement": "balance_sheet",
+      "section": "property_and_equipment",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 2090,
+        "FY2021": 2192
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "fixtures_and_equipment",
+      "label": "Fixtures and equipment",
+      "statement": "balance_sheet",
+      "section": "property_and_equipment",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 8000,
+        "FY2021": 6333
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "property_under_finance_leases",
+      "label": "Property under finance leases",
+      "statement": "balance_sheet",
+      "section": "property_and_equipment",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 63,
+        "FY2021": 73
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "accumulated_depreciation",
+      "label": "Less accumulated depreciation",
+      "statement": "balance_sheet",
+      "section": "property_and_equipment",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 7001,
+        "FY2021": 6996
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "operating_lease_assets",
+      "label": "Operating lease assets",
+      "statement": "balance_sheet",
+      "section": "noncurrent_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 2506,
+        "FY2021": 2612
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "goodwill",
+      "label": "Goodwill",
+      "statement": "balance_sheet",
+      "section": "noncurrent_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 1200,
+        "FY2021": 986
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "other_assets",
+      "label": "Other assets",
+      "statement": "balance_sheet",
+      "section": "noncurrent_assets",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 753,
+        "FY2021": 669
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "accounts_payable",
+      "label": "Accounts payable",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 5051,
+        "FY2021": 6979
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "unredeemed_gift_card_liabilities",
+      "label": "Unredeemed gift card liabilities",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 220,
+        "FY2021": 317
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "deferred_revenue",
+      "label": "Deferred revenue",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 721,
+        "FY2021": 711
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "accrued_compensation",
+      "label": "Accrued compensation and related expenses",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 683,
+        "FY2021": 725
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "accrued_liabilities",
+      "label": "Accrued liabilities",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 923,
+        "FY2021": 972
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "short_term_debt",
+      "label": "Short-term debt",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 120,
+        "FY2021": 110
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "current_operating_lease_liabilities",
+      "label": "Current portion of operating lease liabilities",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 675,
+        "FY2021": 693
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "current_portion_of_long_term_debt",
+      "label": "Current portion of long-term debt",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 14,
+        "FY2021": 14
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "long_term_operating_lease_liabilities",
+      "label": "Long-term operating lease liabilities",
+      "statement": "balance_sheet",
+      "section": "noncurrent_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 2132,
+        "FY2021": 2012
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "long_term_liabilities",
+      "label": "Long-term liabilities",
+      "statement": "balance_sheet",
+      "section": "noncurrent_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 654,
+        "FY2021": 694
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "long_term_debt",
+      "label": "Long-term debt",
+      "statement": "balance_sheet",
+      "section": "noncurrent_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 1259,
+        "FY2021": 1253
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "preferred_stock",
+      "label": "Preferred stock",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 0,
+        "FY2021": 0
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "common_stock",
+      "label": "Common stock",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 26,
+        "FY2021": 26
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "additional_paid_in_capital",
+      "label": "Additional paid-in capital",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 0,
+        "FY2021": 0
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "retained_earnings",
+      "label": "Retained earnings",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 14491,
+        "FY2021": 4233
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "accumulated_other_comprehensive_income",
+      "label": "Accumulated other comprehensive income",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 323,
+        "FY2021": 328
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "statement": "income_statement",
+      "section": "revenue",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 53472,
+        "FY2021": 47262,
+        "FY2019": 42879
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "cost_of_sales",
+      "label": "Cost of sales",
+      "statement": "income_statement",
+      "section": "cost_of_sales",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 29013,
+        "FY2021": 36689,
+        "FY2019": 32918
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "selling_general_and_administrative",
+      "label": "Selling, general and administrative expenses",
+      "statement": "income_statement",
+      "section": "operating_expenses",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 6051,
+        "FY2021": 7928,
+        "FY2019": 8015
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "restructuring_charges",
+      "label": "Restructuring charges",
+      "statement": "income_statement",
+      "section": "operating_expenses",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 51,
+        "FY2021": 254,
+        "FY2019": 46
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "gain_on_sale_of_investments",
+      "label": "Gain on sale of investments",
+      "statement": "income_statement",
+      "section": "other_income_expense",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 1,
+        "FY2021": 1,
+        "FY2019": 12
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "investment_income_and_other",
+      "label": "Investment income and other",
+      "statement": "income_statement",
+      "section": "other_income_expense",
+      "normalBalance": "credit",
+      "values": {
+        "FY2022A": 42,
+        "FY2021": 37,
+        "FY2019": 49
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "interest_expense",
+      "label": "Interest expense",
+      "statement": "income_statement",
+      "section": "other_income_expense",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 67,
+        "FY2021": 52,
+        "FY2019": 73
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "income_tax_expense",
+      "label": "Income tax expense",
+      "statement": "income_statement",
+      "section": "income_tax",
+      "normalBalance": "debit",
+      "values": {
+        "FY2022A": 3852,
+        "FY2021": 579,
+        "FY2019": 424
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    }
+  ],
+  "totals": [
+    {
+      "id": "total_current_assets",
+      "label": "Total current assets",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "terms": [
+        {
+          "ref": "cash_and_equivalents",
+          "sign": 1
+        },
+        {
+          "ref": "receivables_net",
+          "sign": 1
+        },
+        {
+          "ref": "inventories",
+          "sign": 1
+        },
+        {
+          "ref": "other_current_assets",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2022A": 19025,
+        "FY2021": 12540
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "gross_property_and_equipment",
+      "label": "Gross property and equipment",
+      "statement": "balance_sheet",
+      "section": "property_and_equipment",
+      "normalBalance": "debit",
+      "terms": [
+        {
+          "ref": "land_and_buildings",
+          "sign": 1
+        },
+        {
+          "ref": "leasehold_improvements",
+          "sign": 1
+        },
+        {
+          "ref": "fixtures_and_equipment",
+          "sign": 1
+        },
+        {
+          "ref": "property_under_finance_leases",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2022A": 10809,
+        "FY2021": 9256
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "net_property_and_equipment",
+      "label": "Net property and equipment",
+      "statement": "balance_sheet",
+      "section": "property_and_equipment",
+      "normalBalance": "debit",
+      "terms": [
+        {
+          "ref": "gross_property_and_equipment",
+          "sign": 1
+        },
+        {
+          "ref": "accumulated_depreciation",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "FY2022A": 3808,
+        "FY2021": 2260
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "total_assets",
+      "label": "Total assets",
+      "statement": "balance_sheet",
+      "section": "assets",
+      "normalBalance": "debit",
+      "terms": [
+        {
+          "ref": "total_current_assets",
+          "sign": 1
+        },
+        {
+          "ref": "net_property_and_equipment",
+          "sign": 1
+        },
+        {
+          "ref": "operating_lease_assets",
+          "sign": 1
+        },
+        {
+          "ref": "goodwill",
+          "sign": 1
+        },
+        {
+          "ref": "other_assets",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2022A": 27292,
+        "FY2021": 19067
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "total_current_liabilities",
+      "label": "Total current liabilities",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "accounts_payable",
+          "sign": 1
+        },
+        {
+          "ref": "unredeemed_gift_card_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "deferred_revenue",
+          "sign": 1
+        },
+        {
+          "ref": "accrued_compensation",
+          "sign": 1
+        },
+        {
+          "ref": "accrued_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "short_term_debt",
+          "sign": 1
+        },
+        {
+          "ref": "current_operating_lease_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "current_portion_of_long_term_debt",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2022A": 8407,
+        "FY2021": 10521
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "total_liabilities",
+      "label": "Total liabilities",
+      "statement": "balance_sheet",
+      "section": "liabilities",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "total_current_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "long_term_operating_lease_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "long_term_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "long_term_debt",
+          "sign": 1
+        }
+      ],
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets. Not printed in the exhibit; computed from the liability lines."
+    },
+    {
+      "id": "total_equity",
+      "label": "Total equity",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "preferred_stock",
+          "sign": 1
+        },
+        {
+          "ref": "common_stock",
+          "sign": 1
+        },
+        {
+          "ref": "additional_paid_in_capital",
+          "sign": 1
+        },
+        {
+          "ref": "retained_earnings",
+          "sign": 1
+        },
+        {
+          "ref": "accumulated_other_comprehensive_income",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2022A": 14840,
+        "FY2021": 4587
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "total_liabilities_and_equity",
+      "label": "Total liabilities and equity",
+      "statement": "balance_sheet",
+      "section": "liabilities_and_equity",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "total_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "total_equity",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "FY2022A": 27292,
+        "FY2021": 19067
+      },
+      "sourceRef": "Exhibit 4, Consolidated Balance Sheets"
+    },
+    {
+      "id": "gross_profit",
+      "label": "Gross profit",
+      "statement": "income_statement",
+      "section": "gross_profit",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "revenue",
+          "sign": 1
+        },
+        {
+          "ref": "cost_of_sales",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "FY2022A": 24459,
+        "FY2021": 10573,
+        "FY2019": 9961
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "operating_income",
+      "label": "Operating income",
+      "statement": "income_statement",
+      "section": "operating_income",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "gross_profit",
+          "sign": 1
+        },
+        {
+          "ref": "selling_general_and_administrative",
+          "sign": -1
+        },
+        {
+          "ref": "restructuring_charges",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "FY2022A": 18357,
+        "FY2021": 2391,
+        "FY2019": 1900
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "income_before_tax",
+      "label": "Earnings before income tax expense",
+      "statement": "income_statement",
+      "section": "income_before_tax",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "operating_income",
+          "sign": 1
+        },
+        {
+          "ref": "gain_on_sale_of_investments",
+          "sign": 1
+        },
+        {
+          "ref": "investment_income_and_other",
+          "sign": 1
+        },
+        {
+          "ref": "interest_expense",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "FY2022A": 18343,
+        "FY2021": 2377,
+        "FY2019": 1888
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "net_income",
+      "label": "Net earnings",
+      "statement": "income_statement",
+      "section": "net_income",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "income_before_tax",
+          "sign": 1
+        },
+        {
+          "ref": "income_tax_expense",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "FY2022A": 14491,
+        "FY2021": 1798,
+        "FY2019": 1464
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    }
+  ],
+  "facts": [
+    {
+      "id": "eps_basic",
+      "label": "Basic earnings per share",
+      "unit": "usd_per_share",
+      "values": {
+        "FY2022A": 56.5,
+        "FY2021": 6.93,
+        "FY2019": 5.3
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "eps_diluted",
+      "label": "Diluted earnings per share",
+      "unit": "usd_per_share",
+      "values": {
+        "FY2022A": 53.1,
+        "FY2021": 6.84,
+        "FY2019": 5.2
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "weighted_shares_basic",
+      "label": "Weighted-average common shares outstanding, basic",
+      "unit": "shares_millions",
+      "values": {
+        "FY2022A": 256.6,
+        "FY2021": 259.6,
+        "FY2019": 276.4
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    },
+    {
+      "id": "weighted_shares_diluted",
+      "label": "Weighted-average common shares outstanding, diluted",
+      "unit": "shares_millions",
+      "values": {
+        "FY2022A": 272.9,
+        "FY2021": 263.0,
+        "FY2019": 281.4
+      },
+      "sourceRef": "Exhibit 4, Consolidated Statements of Earnings"
+    }
+  ],
+  "perShareChecks": [
+    {
+      "result": "eps_basic",
+      "numerator": "net_income",
+      "denominator": "weighted_shares_basic",
+      "decimals": 2
+    },
+    {
+      "result": "eps_diluted",
+      "numerator": "net_income",
+      "denominator": "weighted_shares_diluted",
+      "decimals": 2
+    }
+  ],
+  "balanceIdentity": {
+    "assets": "total_assets",
+    "liabilitiesAndEquity": "total_liabilities_and_equity"
+  }
+}

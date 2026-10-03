@@ -42,4 +42,10 @@ code disagree, stop and ask.
 - Plain, direct copy that addresses the student as "you".
 
 ## Commands
-(Fill in during phase 0: install, dev, test, lint, typecheck, migrate, seed.)
+- Install: pnpm install
+- Test: pnpm test
+- Typecheck: pnpm typecheck
+- Lint: pnpm lint
+- Format: pnpm format
+- Everything CI runs: pnpm check
+(dev, migrate and seed arrive with the web app in phase 1.)

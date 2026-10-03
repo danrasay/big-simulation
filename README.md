@@ -6,7 +6,7 @@ It adapts the open educational resource "The Big Simulation" from Gettysburg Col
 
 ## Status
 
-Under construction. The build follows [docs/PLAN.md](docs/PLAN.md), one phase at a time.
+Under construction. The build follows [docs/PLAN.md](docs/PLAN.md), one phase at a time. Phase 0 (foundation) is done: the statement model, the scenario data and the checks that the data foots.
 
 ## Layout
 
@@ -14,7 +14,20 @@ Under construction. The build follows [docs/PLAN.md](docs/PLAN.md), one phase at
 | --- | --- |
 | `docs/PLAN.md` | Architecture and development plan |
 | `docs/source/` | The source project's description and exhibits, as Markdown |
+| `scenarios/` | Statement data transcribed from the exhibits, plus a synthetic practice company for tests |
+| `packages/engine/` | The accounting engine: pure TypeScript, no platform or UI imports |
 | `CLAUDE.md` | Working rules for Claude Code in this repo |
+
+## Development
+
+Requires Node 22.13 or later and pnpm.
+
+```sh
+pnpm install
+pnpm check   # typecheck, lint, format check and tests, as CI runs them
+```
+
+TypeScript is held at 6.0 because the lint tooling (typescript-eslint 8) does not yet support TypeScript 7.
 
 ## License
 
