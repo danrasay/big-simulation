@@ -161,7 +161,7 @@ Three behaviors complete the Company workspace:
 ### Ratio engine (Investor role, and live in the Company workspace)
 
 - The 20 ratios in Exhibit 5 are data: id, group, formula over line-item ids, unit, accepted variants.
-- A submitted value passes within 1% relative or 0.01 absolute of the key or an accepted variant. The response says which definition matched.
+- A submitted value passes within 1% relative or 0.01 absolute of the key or an accepted variant. The response says which definition matched. A percent ratio may be entered as a percent or as a fraction: 22.4 and 0.224 both read as 22.4%.
 - Exhibit 5 is ambiguous in four places, so each has a key and an accepted variant:
 
 | Ratio | Key definition | Also accepted |

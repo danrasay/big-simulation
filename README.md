@@ -6,7 +6,7 @@ It adapts the open educational resource "The Big Simulation" from Gettysburg Col
 
 ## Status
 
-Under construction. The build follows [docs/PLAN.md](docs/PLAN.md), one phase at a time. Phase 0 (foundation) is done: the statement model, the scenario data and the checks that the data foots.
+Under construction. The build follows [docs/PLAN.md](docs/PLAN.md), one phase at a time. Done so far: phase 0 (the statement model, the scenario data and the checks that the data foots) and phase 2 (the ratio engine, the year-over-year difference view, the materiality test and the coverage check). There is no web app yet.
 
 ## Layout
 
