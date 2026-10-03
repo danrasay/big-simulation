@@ -7,11 +7,15 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "dev": "pnpm --filter @big-simulation/web dev",
+    "build": "pnpm --filter @big-simulation/web build",
+    "migrate": "pnpm --filter @big-simulation/web db:migrate",
+    "typecheck": "tsc --noEmit -p tsconfig.json && pnpm --filter @big-simulation/web typecheck",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "vitest run",
+    "test:http": "vitest run --config vitest.http.config.ts",
     "check": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm test"
   },
   "devDependencies": {

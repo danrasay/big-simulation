@@ -4,6 +4,7 @@ dist/
 .next/
 coverage/
 *.tsbuildinfo
+next-env.d.ts
 
 # secrets: commit .env.example only
 .env

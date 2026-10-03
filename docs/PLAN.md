@@ -16,7 +16,7 @@ Nine choices change what gets built. The plan below assumes the default in each 
 | 2 | What the database stores about a student | Pseudonymous: a student code plus a keyed hash of the email. No names or emails at rest. The code-to-name roster stays in Zone B | Storing plain emails is simpler to build but puts identifiable records on the host, so get L&C IT sign-off on the vendor first |
 | 3 | Who gets in | lclark.edu Google account AND on the course roster. Domain alone admits every student, faculty and staff account at the college | Domain-only is one config flag (`REQUIRE_ROSTER=false`) |
 | 4 | Where the Google OAuth client lives | A Google Cloud project inside the lclark.edu organization, consent screen set to Internal, if L&C IT allows it | Outside the org it must be External; the server-side `hd` check in this plan covers both cases |
-| 5 | Hosting | Vercel for the app, Neon for Postgres, with a Dockerfile kept so it can move to Cloud Run | If IT wants it in a college-owned cloud project, deploy the same container to Cloud Run with Cloud SQL |
+| 5 | Hosting | Vercel for the app, Supabase for Postgres (its own project, used as a plain database: no Supabase Auth, web API off), with a Dockerfile kept so it can move to Cloud Run | If IT wants it in a college-owned cloud project, deploy the same container to Cloud Run with Cloud SQL |
 | 6 | AI feedback on student writing | Off. The app checks numbers and coverage; you grade the prose | Adding it later means sending student text to a model, which is a Zone A/B question, not a code question |
 | 7 | Share prices for P/E and dividend yield | Not in the exhibits. You supply one price per company at fiscal year end as scenario data | Without prices, those two ratios are hidden rather than guessed |
 | 8 | Solo practice or live market | Teams work against the fixed exhibits first. A live round where Company filings feed Investors and Investigators comes in phase 7 | Skip phase 7 and the app is still complete for the original assignment |
@@ -66,8 +66,8 @@ Students reach the app only through a browser. Names stay in Zone B, the pepper 
 | App | Next.js with the App Router, in TypeScript. Pages and server actions in one deployment | One codebase and one deploy for Claude Code to manage. Server rendering keeps keys off the client |
 | Engine | A pure TypeScript package in the same repo | Testable with no browser and no database |
 | Database | Postgres, with typed queries and migrations (Drizzle) | A relational fit for teams, workspaces and ordered adjustments |
-| Sign-in | A hand-built OpenID Connect code flow, using a small OAuth client library and a JWT verification library | One provider, and full control over what is stored. Auth.js has been in maintenance mode since September 2025, and framework user tables hold name and email by default |
-| Hosting | Vercel for the app, Neon for Postgres. A Dockerfile is kept in the repo | Little to operate for a class-sized app. The container moves to Cloud Run unchanged if IT asks |
+| Sign-in | A hand-built OpenID Connect code flow: two requests to Google written directly, and a JWT verification library (`jose`) for the ID token | One provider, and full control over what is stored. Auth.js has been in maintenance mode since September 2025, and framework user tables hold name and email by default. The small OAuth client library first planned (arctic) was deprecated by the time phase 1 was built |
+| Hosting | Vercel for the app, Supabase for Postgres. A Dockerfile is kept in the repo | Little to operate for a class-sized app, on a database plan already paid for. Row-level security is on for every table with no policies, so Supabase's web API can read nothing even if it is left on. The container moves to Cloud Run unchanged if IT asks |
 | Interface | Server-rendered React, light theme only, in the ELI document style: black on white, Arial, 1px rules | Matches the course documents and prints in black and white |
 | Tests | Unit and property tests for the engine, browser tests for each role's flow, an authorization test per route | The engine is where a silent error would mislead a class |
 | Logs | Host logs plus the audit table. No third-party analytics | No student activity goes to another vendor |
@@ -108,7 +108,7 @@ A keyed hash is pseudonymous, not anonymous. Anyone holding the pepper and a lis
 - Answer keys, the instructor manual findings and other teams' drafts are resolved on the server. They never ship in a student's page bundle or API response.
 - Every mutating request checks the `Origin` header in addition to SameSite cookies.
 - Rate-limit the callback route and all writes. Log sign-ins, submissions and instructor actions to an audit table, by student code.
-- Build the flow with a small maintained OAuth client and a JWT library, not a full auth framework. The app has one provider and must control exactly what is persisted; the common frameworks store name and email by default.
+- Build the flow by hand with a JWT library, not a full auth framework. The app has one provider and must control exactly what is persisted; the common frameworks store name and email by default.
 
 ### Google Cloud setup (Dan, about 20 minutes)
 
@@ -231,6 +231,20 @@ Nine phases, run in order, each ending in a deployed state with its checks passi
 | 6. Instructor console | Sections, open and close, progress by team, read any workspace, release keys, coded export, print views, purge script, Disruptor workbook | M | The export contains student codes only. Print views are legible in grayscale. Purge removes one section's people data and nothing else |
 | 7. Market round (optional) | Company filings publish to the section. Investors allocate across classmates' filings. Investigators audit them. A scoreboard for the classroom screen | L | A scripted class of 6 teams runs a full round: file, allocate, audit, reveal |
 | 8. Hardening | Accessibility pass, authorization test per route, security headers, dependency audit, load test, backup and restore drill, runbook | M | Keyboard-only completion of each role. 60 concurrent users with no errors. A restore from backup verified |
+
+### Phase 1 as built
+
+Where phase 1 differs from the text above, or leaves something for later:
+
+- **Database host.** Supabase instead of Neon (decision 5). Deployment steps are in `docs/DEPLOY.md`.
+- **No OAuth client library.** The two OAuth requests are written directly and the ID token is verified with `jose`.
+- **403 for students.** Instructor pages answer 403 through Next.js's `forbidden()`, which is still behind an experimental flag. If the flag is ever removed the call throws, so the page fails closed.
+- **Roster changes take effect at once.** A signed-in person's role and code are read from their roster row on every request. Removing the row, or closing the section for a student, ends the session. An instructor's row keeps working when its section is closed, so the instructor can reopen it.
+- **No way yet to remove one person.** A roster upload adds and updates. Removing a single student arrives with the instructor console in phase 6; until then, closing the section is the way to end access.
+- **Someone on several rosters.** An instructor row wins over a student row; among equals, the newest row is used.
+- **Rate limiting is not built yet.** It needs a shared counter store. Proposed for phase 8 with the other hardening work, unless you want it sooner.
+- **The Dockerfile is not built yet.** Vercel does not need it. Proposed for phase 8.
+- **Not yet checked on a live deployment.** The checks that need a real Google sign-in are listed in `docs/DEPLOY.md`, section 6.
 
 Rules that apply to every phase:
 
