@@ -53,6 +53,29 @@ export function computeTotals(scenario: Scenario, period: string): Map<string, n
   return result;
 }
 
+/**
+ * Every statement figure for one period, by id: the line items as given and
+ * the totals as computed from them. This is what ratios are calculated on.
+ */
+export function statementValues(scenario: Scenario, period: string): Map<string, number> {
+  const values = computeTotals(scenario, period);
+  for (const item of scenario.lineItems) {
+    const value = item.values[period];
+    if (value !== undefined) values.set(item.id, value);
+  }
+  return values;
+}
+
+/**
+ * The period before the given one. Scenarios list periods newest first, so
+ * this is the next entry in the list.
+ */
+export function priorPeriod(scenario: Scenario, period: string): string | undefined {
+  const index = scenario.periods.findIndex((candidate) => candidate.id === period);
+  if (index === -1) throw new Error(`unknown period "${period}" in scenario "${scenario.id}"`);
+  return scenario.periods[index + 1]?.id;
+}
+
 export interface FootingRow {
   /** Id of the total, or of the per-share result. */
   readonly check: string;

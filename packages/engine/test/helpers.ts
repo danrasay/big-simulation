@@ -48,3 +48,10 @@ export function first<T>(rows: readonly T[]): T {
   if (row === undefined) throw new Error('expected a non-empty list');
   return row;
 }
+
+/** Validates mutated data and returns it as a scenario, failing the test if it is malformed. */
+export function asScenario(data: unknown): Scenario {
+  const result = validateScenario(data);
+  if (!result.ok) throw new Error(result.errors.join('\n'));
+  return result.scenario;
+}

@@ -1,20 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import {
-  balanceReport,
-  computeTotals,
-  footingReport,
-  roundTo,
-  validateScenario,
-} from '../src/index';
-import type { Scenario } from '../src/index';
-import { entry, loadScenario, syntheticCopy } from './helpers';
-
-/** Validates mutated data and returns it as a scenario, failing the test if it is malformed. */
-function asScenario(data: unknown): Scenario {
-  const result = validateScenario(data);
-  if (!result.ok) throw new Error(result.errors.join('\n'));
-  return result.scenario;
-}
+import { balanceReport, computeTotals, footingReport, roundTo } from '../src/index';
+import { asScenario, entry, loadScenario, syntheticCopy } from './helpers';
 
 describe('computeTotals on the synthetic scenario', () => {
   const scenario = loadScenario('synthetic-practice-co.json');
