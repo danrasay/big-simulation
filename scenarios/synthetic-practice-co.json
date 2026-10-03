@@ -1,0 +1,644 @@
+{
+  "schemaVersion": 1,
+  "id": "synthetic-practice-co",
+  "version": 1,
+  "title": "Cascade Practice Co. (synthetic)",
+  "company": "Cascade Practice Co.",
+  "kind": "synthetic",
+  "unit": "USD millions",
+  "source": {
+    "exhibit": "None",
+    "file": "scenarios/synthetic-practice-co.json",
+    "citation": "Invented for this project. Not a real company and not taken from any exhibit."
+  },
+  "periods": [
+    {
+      "id": "Y2",
+      "label": "Year 2",
+      "endDate": "2002-12-31"
+    },
+    {
+      "id": "Y1",
+      "label": "Year 1",
+      "endDate": "2001-12-31"
+    }
+  ],
+  "lineItems": [
+    {
+      "id": "cash_and_equivalents",
+      "label": "Cash and cash equivalents",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "Y2": 300,
+        "Y1": 250
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "receivables_net",
+      "label": "Receivables, net",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "Y2": 200,
+        "Y1": 180
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "inventories",
+      "label": "Inventories",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "Y2": 400,
+        "Y1": 360
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "other_current_assets",
+      "label": "Other current assets",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "values": {
+        "Y2": 100,
+        "Y1": 110
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "gross_property_and_equipment",
+      "label": "Gross property and equipment",
+      "statement": "balance_sheet",
+      "section": "property_and_equipment",
+      "normalBalance": "debit",
+      "values": {
+        "Y2": 1500,
+        "Y1": 1400
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "accumulated_depreciation",
+      "label": "Less accumulated depreciation",
+      "statement": "balance_sheet",
+      "section": "property_and_equipment",
+      "normalBalance": "credit",
+      "values": {
+        "Y2": 500,
+        "Y1": 400
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "goodwill",
+      "label": "Goodwill",
+      "statement": "balance_sheet",
+      "section": "noncurrent_assets",
+      "normalBalance": "debit",
+      "values": {
+        "Y2": 200,
+        "Y1": 200
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "other_assets",
+      "label": "Other assets",
+      "statement": "balance_sheet",
+      "section": "noncurrent_assets",
+      "normalBalance": "debit",
+      "values": {
+        "Y2": 300,
+        "Y1": 300
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "accounts_payable",
+      "label": "Accounts payable",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "Y2": 350,
+        "Y1": 330
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "accrued_liabilities",
+      "label": "Accrued liabilities",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "Y2": 150,
+        "Y1": 140
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "short_term_debt",
+      "label": "Short-term debt",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "Y2": 100,
+        "Y1": 130
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "long_term_debt",
+      "label": "Long-term debt",
+      "statement": "balance_sheet",
+      "section": "noncurrent_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "Y2": 700,
+        "Y1": 760
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "other_long_term_liabilities",
+      "label": "Other long-term liabilities",
+      "statement": "balance_sheet",
+      "section": "noncurrent_liabilities",
+      "normalBalance": "credit",
+      "values": {
+        "Y2": 200,
+        "Y1": 190
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "common_stock",
+      "label": "Common stock",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "Y2": 100,
+        "Y1": 100
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "additional_paid_in_capital",
+      "label": "Additional paid-in capital",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "Y2": 300,
+        "Y1": 300
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "retained_earnings",
+      "label": "Retained earnings",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "values": {
+        "Y2": 600,
+        "Y1": 450
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "statement": "income_statement",
+      "section": "revenue",
+      "normalBalance": "credit",
+      "values": {
+        "Y2": 4000,
+        "Y1": 3600
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "cost_of_sales",
+      "label": "Cost of sales",
+      "statement": "income_statement",
+      "section": "cost_of_sales",
+      "normalBalance": "debit",
+      "values": {
+        "Y2": 2400,
+        "Y1": 2200
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "selling_general_and_administrative",
+      "label": "Selling, general and administrative expenses",
+      "statement": "income_statement",
+      "section": "operating_expenses",
+      "normalBalance": "debit",
+      "values": {
+        "Y2": 1000,
+        "Y1": 950
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "interest_income",
+      "label": "Interest income",
+      "statement": "income_statement",
+      "section": "other_income_expense",
+      "normalBalance": "credit",
+      "values": {
+        "Y2": 10,
+        "Y1": 10
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "interest_expense",
+      "label": "Interest expense",
+      "statement": "income_statement",
+      "section": "other_income_expense",
+      "normalBalance": "debit",
+      "values": {
+        "Y2": 50,
+        "Y1": 60
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "income_tax_expense",
+      "label": "Income tax expense",
+      "statement": "income_statement",
+      "section": "income_tax",
+      "normalBalance": "debit",
+      "values": {
+        "Y2": 140,
+        "Y1": 100
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    }
+  ],
+  "totals": [
+    {
+      "id": "total_current_assets",
+      "label": "Total current assets",
+      "statement": "balance_sheet",
+      "section": "current_assets",
+      "normalBalance": "debit",
+      "terms": [
+        {
+          "ref": "cash_and_equivalents",
+          "sign": 1
+        },
+        {
+          "ref": "receivables_net",
+          "sign": 1
+        },
+        {
+          "ref": "inventories",
+          "sign": 1
+        },
+        {
+          "ref": "other_current_assets",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "Y2": 1000,
+        "Y1": 900
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "net_property_and_equipment",
+      "label": "Net property and equipment",
+      "statement": "balance_sheet",
+      "section": "property_and_equipment",
+      "normalBalance": "debit",
+      "terms": [
+        {
+          "ref": "gross_property_and_equipment",
+          "sign": 1
+        },
+        {
+          "ref": "accumulated_depreciation",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "Y2": 1000,
+        "Y1": 1000
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "total_assets",
+      "label": "Total assets",
+      "statement": "balance_sheet",
+      "section": "assets",
+      "normalBalance": "debit",
+      "terms": [
+        {
+          "ref": "total_current_assets",
+          "sign": 1
+        },
+        {
+          "ref": "net_property_and_equipment",
+          "sign": 1
+        },
+        {
+          "ref": "goodwill",
+          "sign": 1
+        },
+        {
+          "ref": "other_assets",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "Y2": 2500,
+        "Y1": 2400
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "total_current_liabilities",
+      "label": "Total current liabilities",
+      "statement": "balance_sheet",
+      "section": "current_liabilities",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "accounts_payable",
+          "sign": 1
+        },
+        {
+          "ref": "accrued_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "short_term_debt",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "Y2": 600,
+        "Y1": 600
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "total_liabilities",
+      "label": "Total liabilities",
+      "statement": "balance_sheet",
+      "section": "liabilities",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "total_current_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "long_term_debt",
+          "sign": 1
+        },
+        {
+          "ref": "other_long_term_liabilities",
+          "sign": 1
+        }
+      ],
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit. Not printed; computed from the liability lines."
+    },
+    {
+      "id": "total_equity",
+      "label": "Total equity",
+      "statement": "balance_sheet",
+      "section": "equity",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "common_stock",
+          "sign": 1
+        },
+        {
+          "ref": "additional_paid_in_capital",
+          "sign": 1
+        },
+        {
+          "ref": "retained_earnings",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "Y2": 1000,
+        "Y1": 850
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "total_liabilities_and_equity",
+      "label": "Total liabilities and equity",
+      "statement": "balance_sheet",
+      "section": "liabilities_and_equity",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "total_liabilities",
+          "sign": 1
+        },
+        {
+          "ref": "total_equity",
+          "sign": 1
+        }
+      ],
+      "printed": {
+        "Y2": 2500,
+        "Y1": 2400
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "gross_profit",
+      "label": "Gross profit",
+      "statement": "income_statement",
+      "section": "gross_profit",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "revenue",
+          "sign": 1
+        },
+        {
+          "ref": "cost_of_sales",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "Y2": 1600,
+        "Y1": 1400
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "operating_income",
+      "label": "Operating income",
+      "statement": "income_statement",
+      "section": "operating_income",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "gross_profit",
+          "sign": 1
+        },
+        {
+          "ref": "selling_general_and_administrative",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "Y2": 600,
+        "Y1": 450
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "income_before_tax",
+      "label": "Income before income tax",
+      "statement": "income_statement",
+      "section": "income_before_tax",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "operating_income",
+          "sign": 1
+        },
+        {
+          "ref": "interest_income",
+          "sign": 1
+        },
+        {
+          "ref": "interest_expense",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "Y2": 560,
+        "Y1": 400
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "net_income",
+      "label": "Net income",
+      "statement": "income_statement",
+      "section": "net_income",
+      "normalBalance": "credit",
+      "terms": [
+        {
+          "ref": "income_before_tax",
+          "sign": 1
+        },
+        {
+          "ref": "income_tax_expense",
+          "sign": -1
+        }
+      ],
+      "printed": {
+        "Y2": 420,
+        "Y1": 300
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    }
+  ],
+  "facts": [
+    {
+      "id": "eps_basic",
+      "label": "Basic earnings per share",
+      "unit": "usd_per_share",
+      "values": {
+        "Y2": 4.2,
+        "Y1": 3.0
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "eps_diluted",
+      "label": "Diluted earnings per share",
+      "unit": "usd_per_share",
+      "values": {
+        "Y2": 4.0,
+        "Y1": 2.86
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "weighted_shares_basic",
+      "label": "Weighted-average common shares outstanding, basic",
+      "unit": "shares_millions",
+      "values": {
+        "Y2": 100,
+        "Y1": 100
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "weighted_shares_diluted",
+      "label": "Weighted-average common shares outstanding, diluted",
+      "unit": "shares_millions",
+      "values": {
+        "Y2": 105,
+        "Y1": 105
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "shares_outstanding",
+      "label": "Common shares outstanding at period end",
+      "unit": "shares_millions",
+      "values": {
+        "Y2": 100,
+        "Y1": 100
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    },
+    {
+      "id": "dividends_per_share",
+      "label": "Common stock dividends per share",
+      "unit": "usd_per_share",
+      "values": {
+        "Y2": 2.7,
+        "Y1": 2.0
+      },
+      "sourceRef": "Synthetic. Invented round numbers for tests; not from any exhibit."
+    }
+  ],
+  "perShareChecks": [
+    {
+      "result": "eps_basic",
+      "numerator": "net_income",
+      "denominator": "weighted_shares_basic",
+      "decimals": 2
+    },
+    {
+      "result": "eps_diluted",
+      "numerator": "net_income",
+      "denominator": "weighted_shares_diluted",
+      "decimals": 2
+    }
+  ],
+  "balanceIdentity": {
+    "assets": "total_assets",
+    "liabilitiesAndEquity": "total_liabilities_and_equity"
+  }
+}
